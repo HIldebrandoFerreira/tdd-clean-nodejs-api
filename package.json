@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:staged": "jest"
+    "test": "jest --silent --noStackTrace --runInBand",
+    "test:staged": "jest --silent --noStackTrace --findRelatedTests --runInBand",
+    "test:verbose": "jest",
+    "test:ci": "jest --silent --noStackTrace --findRelatedTests --runInBand --coverage"
   },
   "repository": {
     "type": "git",
