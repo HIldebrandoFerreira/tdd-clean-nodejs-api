@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/return-await */
 import { SignUpController } from './signup'
 import { MissingParamError, InvalidParamError, ServerError } from '../error'
 import { EmailValidator } from '../protocols/emial-validator'
