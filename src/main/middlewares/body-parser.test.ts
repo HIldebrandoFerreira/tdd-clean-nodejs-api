@@ -2,7 +2,7 @@ import request from 'supertest'
 import app from '../config/app'
 
 describe('Body Parser', () => {
-  test('', async () => {
+  test('Garantir o parse da requisição como json', async () => {
     app.post('/test_body_parser', (req, res) => {
       res.send(req.body)
     })
